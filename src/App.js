@@ -216,15 +216,18 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Toy Robot Simulator</h2>
+      <div className="wrapper">
+        <h2>Toy Robot Simulator</h2>
 
-      <div> <strong>Command: </strong>
-        <input type="text" onChange={handleChange} onKeyPress={performCommand} />
-        <span id="error">{errorMessage}</span>
+        <div> <strong>Command: </strong></div>
+        <div>
+          <input type="text" onChange={handleChange} onKeyPress={performCommand} />
+          <span id="error">{errorMessage}</span>
 
-      </div>
-      <div> <strong>Report: <span id="report">THE ROBOT POSITION IS X:{robotPosition.x} Y:{robotPosition.y} and facing:{robotPosition.f}</span></strong>
+        </div>
+        <div> <strong>Report: <span id="report">THE ROBOT POSITION IS X:{robotPosition.x} Y:{robotPosition.y} and facing:{robotPosition.f}</span></strong>
 
+        </div>
       </div>
     </div>
   );
